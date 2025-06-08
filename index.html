@@ -6,21 +6,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/slider.css">
 </head>
-<body class="bg-dark text-light d-flex flex-column align-items-center justify-content-center vh-100">
+<body class="bg-dark text-light d-flex flex-column align-items-center">
 
-    <div class="container text-center">
-        <h1 class="mb-4">Visor de Imagenes</h1>
+    <div class="d-flex flex-column align-items-center justify-content-center vh-100" id="visor-wrapper">
+        <div class="container text-center">
+            <h1 class="mb-4 mt-5 pt-2" style="font-weight: bold;">Image Viewer</h1>
 
-        <div class="position-relative" id="galeria-container">
-            <div class="slider" id="galeria">
-                <button id="prevBtn" class="nav-button btn btn-outline-light position-absolute top-50 start-0 translate-middle-y">&#10094;</button>
-                <button id="nextBtn" class="nav-button btn btn-outline-light position-absolute top-50 end-0 translate-middle-y">&#10095;</button>
-            </div>
-                <button id="downloadBtn" class="btn btn-outline-light position-absolute bottom-0 start-50 translate-middle-x mb-3">
-        &#8681; Descargar
-    </button>
+            <div class="position-relative" id="galeria-container">
+                <div class="slider" id="galeria">
+                    <button id="prevBtn" class="nav-button btn btn-outline-light position-absolute top-50 start-0 translate-middle-y">&#10094;</button>
+                    <button id="nextBtn" class="nav-button btn btn-outline-light position-absolute top-50 end-0 translate-middle-y">&#10095;</button>
+                </div>
+            </div>    
+        </div>
+        <div class="pt-2">
+            <button id="downloadBtn" class="btn btn-outline-light">
+            &#8681; Descargar
+            </button>
         </div>
     </div>
+
+  
+    <div class="text-center my-4 pt-2">
+    <div id="listaImagenes" class="image-grid"></div>
+
+    <!-- Botón bien posicionado debajo -->
+    <button id="cargarMasBtn" class="btn btn-outline-light mt-3">
+        Cargar más
+    </button>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/slider.js"></script>
