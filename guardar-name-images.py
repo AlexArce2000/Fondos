@@ -1,4 +1,5 @@
 import os
+import json
 
 def main():
     # Ruta donde está el script
@@ -30,7 +31,16 @@ def main():
             linea_html = f'<img src="fondos/{nombre}" class="active" alt="Imagen {i}">'
             f.write(linea_html + "\n")
 
-    print(f"✅ Código HTML generado en: {archivo_txt}")
+    # Generar archivo JS con la variable 'images'
+    images_js = [{"src": f"fondos/{nombre}", "name": f"Imagen {i}"} for i, nombre in enumerate(nombres_imagenes, start=1)]
+    archivo_js = os.path.join(carpeta_destino, "images_data.js")
+    with open(archivo_js, "w", encoding="utf-8") as f:
+        f.write("const images = ")
+        f.write(json.dumps(images_js, ensure_ascii=False, indent=2))
+        f.write(";")
 
+
+    print(f"✅ Código HTML generado en: {archivo_txt}")
+    print(f"✅ Archivo JS generado en: {archivo_js}")
 if __name__ == "__main__":
     main()
