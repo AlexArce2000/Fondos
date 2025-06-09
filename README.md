@@ -2,7 +2,7 @@
 Este proyecto es un visor de imágenes web que permite mostrar imágenes en un slider central con navegación, descarga y una galería de miniaturas que se carga y actualiza dinámicamente. Está diseñado para ser fácil de mantener y ampliar, y para funcionar sin necesidad de un backend web.
 
 ## Demo en vivo
-➡️[Sitio web](https://alexarce2000.github.io/Fondos/)
+➡️<a href="https://alexarce2000.github.io/Fondos/" target="_blank">Sitio web</a>
 
 ## Características principales
 
