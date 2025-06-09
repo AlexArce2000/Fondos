@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 # Visor para descargar fondos 
 Este proyecto es un visor de imágenes web que permite mostrar imágenes en un slider central con navegación, descarga y una galería de miniaturas que se carga y actualiza dinámicamente. Está diseñado para ser fácil de mantener y ampliar, y para funcionar sin necesidad de un backend web.
 
@@ -45,3 +47,5 @@ Esto hace posible alojarlo en:
 - La carga progresiva ayuda a evitar lentitud si hay muchas imágenes.
 - El script Python es fundamental para mantener la lista de imágenes actualizada sin servidor.
 - Puedes modificar fácilmente el archivo `nombres/imagenes.html` si quieres gestionar las imágenes manualmente.
+
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
